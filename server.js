@@ -14,7 +14,10 @@ const db = require("./models");
 const Role = db.role;
 
 
-db.sequelize.sync()
+db.sequelize.sync().then(()=>{
+  console.log("init role");
+  initial()
+})
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 
