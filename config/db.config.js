@@ -3,6 +3,7 @@ module.exports = {
   USER: process.env.DB_USER || "postgres",
   PASSWORD: process.env.DB_PASSWORD || "lina",
   DB: process.env.DB_NAME || "tododb",
+  SSL: off,
   dialect: "postgres",
   pool: {
     max: 5,
