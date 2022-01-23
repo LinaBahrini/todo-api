@@ -4,7 +4,6 @@ module.exports = {
   PASSWORD: process.env.DB_PASSWORD || "lina",
   DB: process.env.DB_NAME || "tododb",
   dialect: "postgres",
-  ssl:true,
   pool: {
     max: 5,
     min: 0,
